@@ -6,8 +6,16 @@ PLAYER_ICON = '@'
 PLAYER_START_X = 3
 PLAYER_START_Y = 3
 
-BOARD_WIDTH = 30
-BOARD_HEIGHT = 20
+BOARD_WIDTH = 80
+BOARD_HEIGHT = 15
+#map_elements = []
+
+CONTROL_DICT = {
+    'w':[-1,0],
+    's':[1,0],
+    'a':[0,-1],
+    'd':[0,1]
+}
 
 
 def create_player():
