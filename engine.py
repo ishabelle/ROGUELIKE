@@ -9,18 +9,18 @@ def read_map(file_name):
     return board
 
 
-def create_board(width, height):
-    '''
-    Creates a new game board based on input parameters.
+# def create_board(width, height):
+#     '''
+#     Creates a new game board based on input parameters.
 
-    Args:
-    int: The width of the board
-    int: The height of the board
+#     Args:
+#     int: The width of the board
+#     int: The height of the board
 
-    Returns:
-    list: Game board
-    '''
-    pass
+#     Returns:
+#     list: Game board
+#     '''
+#     pass
 
 
 def put_player_on_board(board, player):
@@ -37,5 +37,5 @@ def put_player_on_board(board, player):
     pass
 
 
-name = "map_leve1.txt"
-print(read_map(name))
+# name = "map_level1.txt"
+# print(read_map(name))
