@@ -1,3 +1,14 @@
+
+def read_map(file_name):
+
+    with open(file_name, 'r') as file:
+        read_data = file.read().splitlines()
+
+    board = [list(x) for x in read_data]
+
+    return board
+
+
 def create_board(width, height):
     '''
     Creates a new game board based on input parameters.
@@ -24,3 +35,7 @@ def put_player_on_board(board, player):
     Nothing
     '''
     pass
+
+
+name = "map_leve1.txt"
+print(read_map(name))

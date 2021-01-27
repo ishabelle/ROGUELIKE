@@ -1,0 +1,54 @@
+IKEA :D
+    1. Board – plansza / tablica:
+    • 3 wersje plansz w pliku tekstowym / różne poziomy
+    • Plansze zamieniamy na listy z pliku engine.py (Adventure Game Master)
+    • Wyświetlanie w ui.py (nasz plik Codecool)
+
+    2. Wybór playera (HERO):
+    • Wpisanie imienia playera / wybór rasy / zdrowia itp.
+    • Użytkownik wybiera sobie jakiego playera chce
+    • Player ma być cały czas widoczny na planszy
+
+    3. Możliwość poruszania się playera WSAD:
+    • Nie może przechodzić przez ściany , może przechodzić przez „bramy”
+
+    4. Człowieki wokół playera:
+    • Poruszają się wtedy, gdy player
+    • Randomowe kierunki
+    • Każdy ma inny symbol
+
+    5. Items:
+    • Jedzenie – food - słowniki
+    • Broń – weapons – słowniki
+    • Klucze – (K) 
+    • Itp.
+    • Zbieranie wszystkiego za pomocą klawisza „I”
+    
+    6. Boss:
+    • Na ostatnim levelu
+
+BOMBELKI jako weapons , które mają swoją siłę
+1 rok – 5 lat – 10 lat – im starsze tym silniejsze :D
+
+    7. LOGIKA GRY:
+    • Akcja dzieje się w Ikei, główny bohater może być MADKĄ : Karyna blond, Karyna brąz, Karyna ruda (dostosujemy resztę) (emotka karyny z bombelkiem na rękach)
+
+    • Bombelki jako klucze – Karyna zbiera bombelki żeby przejść na kolejny level
+    • 3 plansze: 
+	- I – pokój dzienny / salon 
+	- II – pokój dziecięcy 
+	- III – kuchnia
+	- w III pomieszczeniu boss – manager – Karyna żeby go zniszczyć rzuca w niego 	bąbelkami;
+
+POKÓJ DZIECIĘCY:
+Dzieciak skacze na sofie, trzeba je wziąć i zabrać
+Asystent każe zabrać dziecko – walka z asystentem (odejmuje życia dla Karyny)
+Trzeba zebrać zabawkę (brokułka) i butelkę
+
+KUCHNIA:
+Zbieramy patelnię
+
+
+Pojawia boss – manager – załatwiamy go patelnią
+
+YOU WIN!
