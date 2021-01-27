@@ -1,6 +1,6 @@
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 X           X                  X B    X            X                           X
-X @                            XXX    X    XXXX    X                           X
+X                              XXX    X    XXXX    X                           X
 X           X                  X    XXX    F  X    X           XXXXXXXXXXXXXXXXX
 XXXXXXXXXXXXX                  X      XXXXXXXXX    X           X      #        X
 X                              X                               $      #  BOSS  X

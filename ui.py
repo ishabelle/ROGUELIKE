@@ -7,4 +7,4 @@ def display_board(board):
         print(''.join(row))
 
 
-display_board(engine.read_map("map_level1.txt"))
+#display_board(engine.read_map("map_level1.txt"))

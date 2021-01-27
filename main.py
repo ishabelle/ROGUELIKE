@@ -4,7 +4,7 @@ import ui
 
 PLAYER_ICON = '@'
 PLAYER_START_X = 3
-PLAYER_START_Y = 3
+PLAYER_START_Y = 2
 
 BOARD_WIDTH = 80
 BOARD_HEIGHT = 15
@@ -21,7 +21,7 @@ CONTROL_DICT = {
 def create_player():
     '''
     Creates a 'player' dictionary for storing all player related informations - i.e. player icon, player position.
-    Fell free to extend this dictionary!
+    Feel free to extend this dictionary!
 
     Returns:
     dictionary
@@ -31,7 +31,8 @@ def create_player():
 
 def main():
     player = create_player()
-    board = engine.create_board(BOARD_WIDTH, BOARD_HEIGHT)
+    #board = engine.create_board(BOARD_WIDTH, BOARD_HEIGHT)
+    board = engine.read_map(file_name="map_level1.txt")
 
     util.clear_screen()
     is_running = True
