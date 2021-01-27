@@ -1,4 +1,13 @@
 
+#INVENTORY
+
+level = print("\U0001F3C6")
+strength = print("\U0001F4AA")
+health_red_heart = print("\U00002764")
+health_grey_heart = print("\U0001F90D")
+sanity = print("\U0001F9D8")
+endurance = print("\U0001F45F")
+
 
 #PLAYER:
 pregnant_blonde = print("\U0001F930")
@@ -15,7 +24,7 @@ key = print("\U0001F511")
 baby_angel_head = print("\U0001F47C")
 baby_bottle = print("\U0001F37C")
 purse = print("\U0001F45C")
-
+shopping_bags = print("\U0001F6CD")
 shopping_trolley = print("\U0001F6D2")
 pencil = print("\U0000270F")
 

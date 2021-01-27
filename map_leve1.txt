@@ -1,0 +1,15 @@
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X            X          X         B X                     X            F  X           X
+X @                     X           X                                     X           X
+X            X          XX  XXXXXXXXX                     X               X           X
+XXXXXXXXXXXXXX          X  S        X                     XXXXXXXXXXXXXXXXX           X
+X                       X           X                                                 X
+X                       XXXXXX  XXXXX                                                 X
+X                                                                        XXXXXXXXXXXXXX
+X                                                                        X            O
+XXXXXXXXX                                                                |   LEVEL 2  O
+X                                        XXXXXXXXX  X                    X            O
+X       X                                X          X                    XXXXXXXXXXXXXX
+X W     X                                X  P       X                                 X
+X       X                                X          X                                 X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
