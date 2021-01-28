@@ -37,26 +37,17 @@ def put_player_on_board(board, player):
 
     player = {
         'icon' : '@',
-        'start_y': 2,
-        'start_x' : 3
+        'y': 2,
+        'x' : 3
         
     }
 
     for row in board:
-        stat_y = player['start_y']
+        stat_y = player["y"]
         for col in board[stat_y]:
-            stat_x = player['start_x']
-            board[stat_y][stat_x ]= player['icon']
-    return board
+            stat_x = player["x"]
+            board[stat_y][stat_x ]= player["icon"]
 
-
-    # if len(maplist)<2:
-    #     board[last_position[POS_Y]][last_position[POS_X]] = '.'
-    # else:
-    #     board[last_position[POS_Y]][last_position[POS_X]] = maplist[1]
-    # board[player['y']][player['x']] = player['icon']
-
-    #return board
 
 # name = "map_level1.txt"
 # print(read_map(name))

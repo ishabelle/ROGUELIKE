@@ -3,9 +3,11 @@ import engine
 import ui
 import constants
 
+
 PLAYER_ICON = '@'
 PLAYER_START_X = 3
 PLAYER_START_Y = 2
+
 
 BOARD_WIDTH = 80
 BOARD_HEIGHT = 15
@@ -43,6 +45,7 @@ def create_player():
     }
 
 
+
 def main():
     player = create_player()
     #board = engine.create_board(BOARD_WIDTH, BOARD_HEIGHT)
@@ -56,14 +59,6 @@ def main():
 
         key = util.key_pressed()
 
-        #checking for obstacles around player before move
-        side = 1
-        no_obstacle_up = board[player["y"]-side][player["x"]] in constants.WALK_ON_ITEMS
-        no_obstacle_down = board[player["y"]+side][player["x"]] in constants.WALK_ON_ITEMS
-        no_obstacle_left = board[player["y"]][player["x"]-side] in constants.WALK_ON_ITEMS
-        no_obstacle_right = board[player["y"]][player["x"]+side] in constants.WALK_ON_ITEMS
-
-
         if key == 'q':
             is_running = False
         else:
@@ -73,3 +68,25 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+        # #checking for obstacles around player before move
+        # # side = 1
+        # # no_obstacle_up = board[player["y"]-side][player["x"]] in constants.WALK_ON_ITEMS
+        # # no_obstacle_down = board[player["y"]+side][player["x"]] in constants.WALK_ON_ITEMS
+        # # no_obstacle_left = board[player["y"]][player["x"]-side] in constants.WALK_ON_ITEMS
+        # # no_obstacle_right = board[player["y"]][player["x"]+side] in constants.WALK_ON_ITEMS
+
+        # #player walking moves
+        # # move_keys = constants.KEY_MOVES
+        # # if key == 'w':
+        #     player[PLAYER_START_Y] -= 1
+        # # if key in 'wsad':
+        # #     if key == 'w': # and no_obstacle_up:
+        # #         player["y"] -= 1
+        #     # if key in move_keys["down"] and no_obstacle_down:
+        #     #     player["y"] += 1
+        #     # if key in move_keys["left"] and no_obstacle_left:
+        #     #     player["x"] -= 1
+        #     # if key in move_keys["right"] and no_obstacle_right:
+        #     #     player["x"] += 1        

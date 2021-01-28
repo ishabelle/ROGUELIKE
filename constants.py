@@ -9,12 +9,20 @@ BOARD_HEIGHT = 15
 
 OBSTACLES = {
     "wall" : "X",
-    "door" : "|"
+    "door" : "|",
+    "boss_door" : "#",
+    "next_level_opening" : "O"
 }
 
-WALK_ON_ITEMS = "ABCDEFGHIJKLMNPRSTUWYZ " #EXCLUDED 'X' BECAUSE IT IS OUR WALL and 'O' because its special
+#WALK_ON_ITEMS = "ABCDEFGHIJKLMNPRSTUWYZ " #EXCLUDED 'X' BECAUSE IT IS OUR WALL and 'O' because its special
+WALK_ON_ITEMS = [" "]
+ITEMS_TO_PICK_UP = "BWSPF"
 
-NEXT_LEVEL_ACCESS = "O"
+ENEMIES = {
+    "IKEA_worker" : "W",
+    "old_lady" : "H",
+    "cashier" : "$"
+}
 
 KEY_MOVES = {"left": ["a", "4"],
                 "right": ["d", "6"],
@@ -34,4 +42,5 @@ KEY_INFO = {"inventory": ("i"),
 KEY_FIGHT = {
                 "Fight": ("1"),
                 "Use inventory": ("2"),
-                "Try to escape": ("3"),
+                "Try to escape": ("3")
+}
