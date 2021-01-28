@@ -1,6 +1,7 @@
 import util
 import engine
 import ui
+import constants
 
 PLAYER_ICON = '@'
 PLAYER_START_X = 3
@@ -54,6 +55,15 @@ def main():
         ui.display_board(board)
 
         key = util.key_pressed()
+
+        #checking for obstacles around player before move
+        side = 1
+        no_obstacle_up = board[player["y"]-side][player["x"]] in constants.WALK_ON_ITEMS
+        no_obstacle_down = board[player["y"]+side][player["x"]] in constants.WALK_ON_ITEMS
+        no_obstacle_left = board[player["y"]][player["x"]-side] in constants.WALK_ON_ITEMS
+        no_obstacle_right = board[player["y"]][player["x"]+side] in constants.WALK_ON_ITEMS
+
+
         if key == 'q':
             is_running = False
         else:
