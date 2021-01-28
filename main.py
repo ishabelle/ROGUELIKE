@@ -26,7 +26,20 @@ def create_player():
     Returns:
     dictionary
     '''
-    pass
+    player = {
+        "x": PLAYER_START_X,
+        "y": PLAYER_START_Y,
+        "icon": PLAYER_ICON,
+        "height": 1,
+        "width": 1,
+        "health": 9,
+        "lvl": 1,
+        "strength": 1, # increases once you eat FOOD
+        "charisma": 1, # increases as a bonus from events/meetings
+        "sanity" : 1,   # Increases once you find another one of your babies 
+        "max_hp": 10,
+        "attack": 5   # for enemies
+    }
 
 
 def main():
