@@ -7,7 +7,7 @@ X                       X           X                                          X
 X                       XXXXXX  XXXXX                                          X
 X                                                                 XXXXXXXXXXXXXX
 X                                                                 X            X
-XXXXXXXXX                                                         |   LEVEL 2  O
+XXXXXXXXX                                                             LEVEL 2  O
 X                                        XXXXXXXXX  X             X            X
 X       X                                X          X             XXXXXXXXXXXXXX
 X       X                                X          X                          X

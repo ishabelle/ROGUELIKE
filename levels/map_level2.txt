@@ -2,7 +2,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 X            X                    X       X                        X           X
 X                                 X    XXXX                        X   LEVEL3  O
 X            X                    X       X                        X           X
-XXXXXXXXXXXXXX                    XXXX    X                        |           X
+XXXXXXXXXXXXXX                    XXXX    X                                    X
 X                                 X       X                        XXXXXXXXXXXXX
 X                                 X       X                                    X
 XXXXXXXXXXXXXXX              XXXXXX       XXXXXX                               X
