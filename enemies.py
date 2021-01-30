@@ -47,7 +47,7 @@ def create_ikea_detective(x_position, y_position):
 
 
 def create_enemies_list(file_name):
-    if file_name == "map_level1.txt":
+    if file_name == "levels/map_level1.txt":
         X_INDEX = 0
         Y_INDEX =1
         ikea_contruction_worker_coordinates = [(15, 13)]
@@ -59,8 +59,8 @@ def create_enemies_list(file_name):
         ikea_bodyguard_enemy = [create_ikea_bodyguard(element[X_INDEX], element[Y_INDEX]) for element in ikea_bodyguard_coordinates]
         ikea_detective_enemy = [create_ikea_detective(element[X_INDEX], element[Y_INDEX]) for element in ikea_detective_coordinates]
         enemies_list = ikea_contruction_worker_enemy + ikea_information_worker_enemy + ikea_bodyguard_enemy + ikea_detective_enemy
-    elif file_name == "map_level2.txt":
+    elif file_name == "levels/map_level2.txt":
         pass
-    elif file_name == "map_level3.txt":
+    elif file_name == "levels/map_level3.txt":
         pass
     return enemies_list
