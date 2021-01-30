@@ -1,7 +1,7 @@
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-X           X                  X B    X            X                           X
+X           X                  X      X            X                           X
 X                              XXX    X    XXXX    X                           X
-X           X                  X    XXX    F  X    X           XXXXXXXXXXXXXXXXX
+X           X                  X    XXX       X    X           XXXXXXXXXXXXXXXXX
 XXXXXXXXXXXXX                  X      XXXXXXXXX    X           X      #        X
 X                              X                               $      #  BOSS  X
 X                              XXXXXXXXXXXXXXXXXXXXX           X      #        X
@@ -9,7 +9,7 @@ X                                                              XXXXXXXXXXXXXXXXX
 X         XXXXXXXXXXXXXXXXX                                                    X
 X         X               X                                                    X
 X         X     XX  XX    X                    XXXXXXXXX   XXXXXXXXX           X   
-X         X     X W  X    X                    X           X  W    X           X
+X         X     X    X    X                    X           X       X           X
 X         X     XXXXXX                         X   XXXXXXXXXXXXX   X           X
 X         X               X                    X                   X           X
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
