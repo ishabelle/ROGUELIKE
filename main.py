@@ -9,8 +9,8 @@ PLAYER_ICON = '\033[1;33;1m@\033[1;37;1m'
 PLAYER_START_X = 3
 PLAYER_START_Y = 2
 
-BOARD_WIDTH = 80
-BOARD_HEIGHT = 15
+# BOARD_WIDTH = 80
+# BOARD_HEIGHT = 15
 #map_elements = []
 
 
@@ -26,7 +26,7 @@ def create_player():
     player["x"] = PLAYER_START_X
     player["y"] = PLAYER_START_Y
     player["icon"] = PLAYER_ICON
-    player["collection"] = 0
+    player["inventory"] = 0
     player["food"] = 0
     player["weapons"] = 0
     player["weapon"] = "None"
@@ -282,6 +282,7 @@ def main():
     
     player = create_player()
     while player["level"] == 1 and player["HP"] > 0:
+        util.clear_screen()
         try:
             file_name = "levels/map_level1.txt"
             enemies_list = enemies.create_enemies_list(file_name)
@@ -296,9 +297,10 @@ def main():
                 return player
             if key == "y":
                 player["HP"] = 50
-        player["x"] = 1
-        player["y"] = 1
+        player["x"] = PLAYER_START_X
+        player["y"] = PLAYER_START_Y
     while player["level"] == 2 and player["HP"] > 0:
+        util.clear_screen()
         try:
             file_name = "levels/map_level2.txt"
             enemies_list = enemies.create_enemies_list(file_name)
@@ -312,9 +314,10 @@ def main():
                 return player
             if key == "y":
                 player["HP"] = 50
-        player["x"] = 1
-        player["y"] = 1
+        player["x"] = PLAYER_START_X
+        player["y"] = PLAYER_START_Y
     while player["level"] == 3 and player["HP"] > 0:
+        util.clear_screen()
         try:
             file_name = "levels/map_level3.txt"
             enemies_list = enemies.create_enemies_list(file_name)
@@ -329,8 +332,8 @@ def main():
                 return player
             if key == "y":
                 player["HP"] = 50
-        player["x"] = 1
-        player["y"] = 1
+        player["x"] = PLAYER_START_X
+        player["y"] = PLAYER_START_Y
     while player["level"] == 4 and player["HP"] > 0:
         util.clear_screen()
         player = engine.boss(player)
