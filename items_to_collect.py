@@ -15,7 +15,7 @@ def create_baby_angel_head(x_position, y_position):
     item["x"] = x_position
     item["y"] = y_position
     item["icon"] = "\U0001F47C"
-    item["type"] = "collection"
+    item["type"] = "inventory"
     item["HP"] = 5
     item["on_board"] = 1
     item["weight"] = 5
@@ -27,7 +27,7 @@ def create_baby_bottle(x_position, y_position):
     item["x"] = x_position
     item["y"] = y_position
     item["icon"] = "\U0001F37C"
-    item["type"] = "collection"
+    item["type"] = "inventory"
     item["HP"] = 10
     item["on_board"] = 1
     item["weight"] = 5
@@ -39,7 +39,7 @@ def create_purse(x_position, y_position):
     item["x"] = x_position
     item["y"] = y_position
     item["icon"] = "\U0001F45C"
-    item["type"] = "collection"
+    item["type"] = "inventory"
     item["HP"] = 15
     item["on_board"] = 1
     item["weight"] = 5
@@ -51,7 +51,7 @@ def create_shopping_bags(x_position, y_position):
     item["x"] = x_position
     item["y"] = y_position
     item["icon"] = "\U0001F6CD"
-    item["type"] = "collection"
+    item["type"] = "inventory"
     item["HP"] = 5
     item["on_board"] = 1
     item["weight"] = 5
@@ -63,7 +63,7 @@ def create_shopping_trolley(x_position, y_position):
     item["x"] = x_position
     item["y"] = y_position
     item["icon"] = "\U0001F6D2"
-    item["type"] = "collection"
+    item["type"] = "weapons"
     item["HP"] = 15
     item["on_board"] = 1
     item["weight"] = 5
@@ -75,7 +75,7 @@ def create_pencil(x_position, y_position):
     item["x"] = x_position
     item["y"] = y_position
     item["icon"] = "\U0000270F"
-    item["type"] = "collection"
+    item["type"] = "inventory"
     item["HP"] = 10
     item["on_board"] = 1
     item["weight"] = 5
