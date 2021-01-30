@@ -1,0 +1,23 @@
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                               X
+X   HOW TO PLAY?                    THINGS TO COLLECT:          X
+X                                                               X
+X   w - MOVE UP                     🔑  👼 🍼 👜  🛍 🛒        X
+X   s - MOVE DOWN                   ✏  🍳 🔪 🥦 🌭 🧆        X
+X   a - MOVE LEFT                            🍦                 X
+X   d - MOVE RIGHT                                              X
+X                                                               X
+X                                                               X
+X   STORY:                                                      X
+X   FAR, FAR AWAY, IN UNKOWN SPACE-TIME..                       X             
+X   THERE WAS HAPPY WOMEN. SHE WAS LEADING A WONDERFUL LIFE.    X                                
+X   UNFORTUNATELY, ONE DAY SHE WENT SHOPPING IN IKEA. SHE       X                           
+X   DIDN'T KNOW, THAT SHE WOULD REMEMBER THIS DAY FOR A LONG    X                            
+X   TIME..                                                      X
+X   YOU TASK IS SUPPORT HER AND HELP ACCOMPLISH ALL TASKS.      X                          
+X   DON'T FORGET TO COLLECT THE THINGS YOU ENCOUNTER ALONG      X                                                          
+X   THE WAY. DON'T BE AFRAID, EVERYTHING WILL BE FINE.          X                                         
+X   G O O D   L U C K !                                         X         
+X                                                               X
+X   (enter "q" to quit)                                         X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
