@@ -5,7 +5,7 @@ import items_to_collect
 import enemies
 import time
 
-PLAYER_ICON = "@"
+PLAYER_ICON = '\033[1;33;1m@\033[1;37;1m'
 PLAYER_START_X = 3
 PLAYER_START_Y = 2
 
@@ -77,7 +77,7 @@ def level_one_start(player, enemies_list, file_name):
 
 
     is_running = True
-    # ui.display_board(engine.create_board("Messages/message_level1.txt"))
+    ui.display_board(engine.create_board("messages/level1.txt"))
     time.sleep(1)
 
     while is_running:
@@ -88,7 +88,7 @@ def level_one_start(player, enemies_list, file_name):
         board = engine.create_board(file_name)
         lift = player["capacity"]
         lift_list = lift.split("/")
-        engine.put_gate(board, player)
+        # engine.put_gate(board, player)
         if int(lift_list[0]) < 100:
             player = engine.player_coordinates_change(key, player, board)
         board = engine.put_player_on_board(board, player)
@@ -128,7 +128,7 @@ def level_one_start(player, enemies_list, file_name):
         if player["HP"] <= 0:
             print("Game over")
             return player
-        engine.put_gate(board, player)
+        #engine.put_gate(board, player)
         ui.display_board(board)
         ui.display_inventory(player)
 
@@ -152,8 +152,8 @@ def level_two_start(player, enemies_list, file_name):
     objects_four = [player, item_four]
 
     is_running = True
-    # ui.display_board(engine.create_board("Messages/message_lvl2.txt"))
-    # time.sleep(3)
+    ui.display_board(engine.create_board("messages/level2.txt"))
+    time.sleep(1)
 
     while is_running:
         key = util.key_pressed()
@@ -221,7 +221,7 @@ def level_three_start(player, enemies_list, file_name):
     objects_four = [player, item_four]
 
     is_running = True
-    ui.display_board(engine.create_board("Messages/message_level3.txt"))
+    ui.display_board(engine.create_board("messages/level3.txt"))
     time.sleep(3)
 
     while is_running:
@@ -348,7 +348,7 @@ def main():
 if __name__ == "__main__":
     while True:
         util.clear_screen()
-        start_screen.main() #utworzyć plik start_screen i poprzeklejać funkcje
+        #start_screen.main() #utworzyć plik start_screen i poprzeklejać funkcje
         util.clear_screen()
         player = main()
         util.clear_screen()

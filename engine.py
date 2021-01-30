@@ -183,10 +183,10 @@ def item_interaction(player, item):
     return player
 
 
-def put_gate(board, player):
-    if player["food"] != 4:
-        board[28][75] = "X"
-    return board
+# def put_gate(board, player):
+#     if player["food"] != 4:
+#         board[28][75] = "X"
+#     return board
 
 
 def enemy_interaction(player, enemy):

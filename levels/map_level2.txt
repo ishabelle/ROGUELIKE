@@ -1,6 +1,6 @@
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 X            X                    X       X                        X           X
-X                                 X    XXXX               H        X   LEVEL3  O
+X                                 X    XXXX                        X   LEVEL3  O
 X            X                    X       X                        X           X
 XXXXXXXXXXXXXX                    XXXX    X                        |           X
 X                                 X       X                        XXXXXXXXXXXXX
