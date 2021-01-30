@@ -62,20 +62,19 @@ def level_one_start(player, enemies_list, file_name):
 
     # Creating objects and items
 
-    item_one = items_to_collect.create_baby_angel_head(1, 2)
-
-    # item_two = items.create_banana(23, 6)
-    # item_three = items.create_knife(15, 14)
-    # item_four = items.create_shoes(63, 5)
-    # item_five = items.create_apple(35, 27)
-    # item_six = items.create_banana(77, 2)
+    item_one = items_to_collect.create_baby_angel_head(34, 1)
+    item_two = items_to_collect.create_shopping_trolley(2, 12)
+    item_three = items_to_collect.create_hot_dog(61, 1)
+    item_four = items_to_collect.create_pencil(44, 12)
+    # item_five = items_to_collect.create_apple(35, 27)
+    # item_six = items_to_collect..create_banana(77, 2)
 
     # Creating interactions
 
     objects_one = [player, item_one]
-    # objects_two = [player, item_two]
-    # objects_three = [player, item_three]
-    # objects_four = [player, item_four]
+    objects_two = [player, item_two]
+    objects_three = [player, item_three]
+    objects_four = [player, item_four]
     # objects_five = [player, item_five]
     # objects_six = [player, item_six]
 
@@ -127,16 +126,16 @@ def level_one_start(player, enemies_list, file_name):
             player = objects_four[0]
             item_four = objects_four[1]
             objects_four = engine.item_board_interaction(board, item_four, player)
-        if item_five["on_board"] == 1:
-            board = engine.put_items_on_board(board, item_five)
-            player = objects_five[0]
-            item_five = objects_five[1]
-            objects_five = engine.item_board_interaction(board, item_five, player)
-        if item_six["on_board"] == 1:
-            board = engine.put_items_on_board(board, item_six)
-            player = objects_six[0]
-            item_six = objects_six[1]
-            objects_six = engine.item_board_interaction(board, item_six, player)
+        # if item_five["on_board"] == 1:
+        #     board = engine.put_items_on_board(board, item_five)
+        #     player = objects_five[0]
+        #     item_five = objects_five[1]
+        #     objects_five = engine.item_board_interaction(board, item_five, player)
+        # if item_six["on_board"] == 1:
+        #     board = engine.put_items_on_board(board, item_six)
+        #     player = objects_six[0]
+        #     item_six = objects_six[1]
+            # objects_six = engine.item_board_interaction(board, item_six, player)
         if player["HP"] <= 0:
             print("Game over")
             return player
