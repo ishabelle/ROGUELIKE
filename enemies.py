@@ -60,6 +60,7 @@ def create_enemies_list(file_name):
         ikea_bodyguard_enemy = [create_ikea_bodyguard(element[X_INDEX], element[Y_INDEX]) for element in ikea_bodyguard_coordinates]
         ikea_detective_enemy = [create_ikea_detective(element[X_INDEX], element[Y_INDEX]) for element in ikea_detective_coordinates]
         enemies_list = ikea_contruction_worker_enemy + ikea_information_worker_enemy + ikea_bodyguard_enemy + ikea_detective_enemy
+    
     elif file_name == "levels/map_level2.txt":
         X_INDEX = 0
         Y_INDEX =1
@@ -74,5 +75,16 @@ def create_enemies_list(file_name):
         enemies_list = ikea_contruction_worker_enemy + ikea_information_worker_enemy + ikea_bodyguard_enemy + ikea_detective_enemy
         
     elif file_name == "levels/map_level3.txt":
-        pass
+        X_INDEX = 0
+        Y_INDEX =1
+        ikea_contruction_worker_coordinates = [(3, 9)]
+        ikea_information_worker_coordinates = [(12, 33)]
+        ikea_bodyguard_coordinates = [(21, 10)]
+        ikea_detective_coordinates = [(5, 3)]
+        ikea_contruction_worker_enemy = [create_ikea_construction_worker(element[X_INDEX], element[Y_INDEX]) for element in ikea_contruction_worker_coordinates]
+        ikea_information_worker_enemy = [create_ikea_information_worker(element[X_INDEX], element[Y_INDEX]) for element in ikea_information_worker_coordinates]
+        ikea_bodyguard_enemy = [create_ikea_bodyguard(element[X_INDEX], element[Y_INDEX]) for element in ikea_bodyguard_coordinates]
+        ikea_detective_enemy = [create_ikea_detective(element[X_INDEX], element[Y_INDEX]) for element in ikea_detective_coordinates]
+        enemies_list = ikea_contruction_worker_enemy + ikea_information_worker_enemy + ikea_bodyguard_enemy + ikea_detective_enemy
+    
     return enemies_list
