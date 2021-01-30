@@ -156,9 +156,9 @@ def level_three_start(player, enemies_list, file_name):
 
 
 def restart(player, hp):
-    if key == "n":
+    if util.key_pressed() == "n":
         return player
-    if key == "y":
+    if util.key_pressed() == "y":
         player["HP"] = hp
 
 def main():
