@@ -66,8 +66,7 @@ def level_one_start(player, enemies_list, file_name):
     item_two = items_to_collect.create_shopping_trolley(2, 12)
     item_three = items_to_collect.create_hot_dog(61, 1)
     item_four = items_to_collect.create_pencil(44, 12)
-    # item_five = items_to_collect.create_apple(35, 27)
-    # item_six = items_to_collect..create_banana(77, 2)
+
 
     # Creating interactions
 
@@ -75,11 +74,10 @@ def level_one_start(player, enemies_list, file_name):
     objects_two = [player, item_two]
     objects_three = [player, item_three]
     objects_four = [player, item_four]
-    # objects_five = [player, item_five]
-    # objects_six = [player, item_six]
+
 
     is_running = True
-    
+    # ui.display_board(engine.create_board("Messages/message_level1.txt"))
     time.sleep(1)
 
     while is_running:
@@ -126,16 +124,7 @@ def level_one_start(player, enemies_list, file_name):
             player = objects_four[0]
             item_four = objects_four[1]
             objects_four = engine.item_board_interaction(board, item_four, player)
-        # if item_five["on_board"] == 1:
-        #     board = engine.put_items_on_board(board, item_five)
-        #     player = objects_five[0]
-        #     item_five = objects_five[1]
-        #     objects_five = engine.item_board_interaction(board, item_five, player)
-        # if item_six["on_board"] == 1:
-        #     board = engine.put_items_on_board(board, item_six)
-        #     player = objects_six[0]
-        #     item_six = objects_six[1]
-            # objects_six = engine.item_board_interaction(board, item_six, player)
+
         if player["HP"] <= 0:
             print("Game over")
             return player
@@ -147,6 +136,8 @@ def level_one_start(player, enemies_list, file_name):
 
 
 def level_two_start(player, enemies_list, file_name):
+
+    # Creating objects and items
 
     item_one = items_to_collect.create_baby_angel_head(12, 8)
     item_two = items_to_collect.create_meat_balls(5, 13)
@@ -172,7 +163,7 @@ def level_two_start(player, enemies_list, file_name):
         board = engine.create_board(file_name)
         player = engine.player_coordinates_change(key, player, board)
         board = engine.put_player_on_board(board, player)
-        if player['x'] == 77 and player['y'] == 1:
+        if player['x'] == 79 and player['y'] == 2:
             player['level'] = 3
             is_running = False
         for index in range(len(enemies_list)):
@@ -214,7 +205,71 @@ def level_two_start(player, enemies_list, file_name):
 
 
 def level_three_start(player, enemies_list, file_name):
-    pass
+
+    # Creating objects and items
+
+    item_one = items_to_collect.create_frying_pan(18, 11)
+    item_two = items_to_collect.create_baby_angel_head(33, 1)
+    item_three = items_to_collect.create_ice_cream(43, 3)
+    item_four = items_to_collect.create_knife(62, 11)
+
+    # Creating interactions
+
+    objects_one = [player, item_one]
+    objects_two = [player, item_two]
+    objects_three = [player, item_three]
+    objects_four = [player, item_four]
+
+    is_running = True
+    ui.display_board(engine.create_board("Messages/message_level3.txt"))
+    time.sleep(3)
+
+    while is_running:
+        key = util.key_pressed()
+        util.clear_screen()
+        if key == 'q':
+            assert False
+        board = engine.create_board(file_name)
+        player = engine.player_coordinates_change(key, player, board)
+        board = engine.put_player_on_board(board, player)
+        if player['x'] == 63 and player['y'] == 5: #symbol $ - KASA
+            player['level'] = 4 # BOSS, jak nie bedzie bossa to moze byc ekran YOU WON?
+            is_running = False
+        for index in range(len(enemies_list)):
+            enemy = enemies_list[index]
+            if enemy['HP'] > 0:
+                enemy = engine.enemy_movement(board, enemy)
+                board = engine.put_enemies_on_board(board, enemy)
+                fight = engine.enemy_board_interaction(board, enemy, player)
+                player = fight[0]
+                enemy = fight[1]
+                enemies_list[index] = enemy
+        if item_one['on_board'] == 1:
+            board = engine.put_items_on_board(board, item_one)
+            player = objects_one[0]
+            item_one = objects_one[1]
+            objects_one = engine.item_board_interaction(board, item_one, player)
+        if item_two['on_board'] == 1:
+            board = engine.put_items_on_board(board, item_two)
+            player = objects_two[0]
+            item_two = objects_two[1]
+            objects_two = engine.item_board_interaction(board, item_two, player)
+        if item_three['on_board'] == 1:
+            board = engine.put_items_on_board(board, item_three)
+            player = objects_three[0]
+            item_three = objects_three[1]
+            objects_three = engine.item_board_interaction(board, item_three, player)
+        if item_four['on_board'] == 1:
+            board = engine.put_items_on_board(board, item_four)
+            player = objects_four[0]
+            item_four = objects_four[1]
+            objects_four = engine.item_board_interaction(board, item_four, player)
+        if player['HP'] <= 0:
+            return player
+        ui.display_board(board)
+        ui.display_inventory(player)
+
+    return player
 
 
 def restart(player, hp):
