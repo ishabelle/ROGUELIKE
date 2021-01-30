@@ -6,7 +6,7 @@ XX                                                       XX
 XXX                                                     XXX
 XXX                                                     XXX
 XXXX                                                   XXXX
-XXXX                      LEVEL 1                      XXXX
+XXXX               LEVEL 1 - LIVING ROOM               XXXX
 XXXXX                                                 XXXXX
 XXXX              PRESS ANY KEY TO START               XXXX
 XXXX                                                   XXXX
