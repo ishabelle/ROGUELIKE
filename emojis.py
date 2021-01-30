@@ -17,6 +17,8 @@ normal_person = print("\U0001F9CD")
 #OTHER CHARACTERS: 
 ikea_construction_worker = print("\U0001F477")
 ikea_information_worker = print("\U0001F481")
+ikea_bodyguard = print("\U0001f46e")
+ikea_detective = print("\U0001f575")
 
 #THINGS TO COLLECT
 key = print("\U0001F511")
