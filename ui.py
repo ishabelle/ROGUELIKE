@@ -8,3 +8,7 @@ def display_board(board):
 
 
 #display_board(engine.read_map("map_level1.txt"))
+
+def display_inventory(player):
+    inventory = f"Level:{player['level']} HP:{player['HP']} Attack:{player['attack']} Armor:{player['armor']} Weapon:{player['weapon']} Capacity:{player['capacity']}"
+    print(inventory)
