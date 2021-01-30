@@ -26,7 +26,7 @@ def create_shopping_trolley(x_position, y_position):
     item = {}
     item["x"] = x_position
     item["y"] = y_position
-    item["icon"] = "\033[1;32;1mW\033[1;37;1m"
+    item["icon"] = "\033[1;32;1mT\033[1;37;1m"
     item["type"] = "weapons"
     item["HP"] = 15
     item["on_board"] = 1
