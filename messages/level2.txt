@@ -1,0 +1,19 @@
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                                         X
+X                                                         X
+XX                                                       XX
+XX                                                       XX
+XXX                                                     XXX
+XXX                                                     XXX
+XXXX                                                   XXXX
+XXXX              LEVEL 2 - CHILDREN ROOM              XXXX
+XXXXX                                                 XXXXX
+XXXX              PRESS ANY KEY TO START               XXXX
+XXXX                                                   XXXX
+XXX                                                     XXX
+XXX                                                     XXX
+XX                                                       XX
+XX                                                       XX
+X                                                         X
+X  (enter "q" to quit)                                    X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
