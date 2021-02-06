@@ -153,6 +153,7 @@ def item_board_interaction(board, item, player):
     if item_nearby_x == player_nearby_x and item_nearby_y == player_nearby_y:
         player = item_interaction(player, item)
         item["on_board"] = 0
+    #ui.display_inventory(player)
     return [player, item]
 
 def item_interaction(player, item):
@@ -163,6 +164,8 @@ def item_interaction(player, item):
         lift_list = lift.split("/")
         new_weight = int(lift_list[0]) + item["weight"]
         player["capacity"] = f"{new_weight}/100"
+        #ui.display_inventory(player)
+        
     
     elif item["type"] == "weapon":
         player["attack"] = item["damage"]
@@ -171,6 +174,8 @@ def item_interaction(player, item):
         lift_list = lift.split("/")
         new_weight = int(lift_list[0]) + item["weight"]
         player["capacity"] = f"{new_weight}/100"
+        #ui.display_inventory(player)
+        
    
     elif item["type"] == "food":
         player["food"] += 1
@@ -179,6 +184,7 @@ def item_interaction(player, item):
         lift_list = lift.split("/")
         new_weight = int(lift_list[0]) + item["weight"]
         player["capacity"] = f"{new_weight}/100"
+        #ui.display_inventory(player)
    
     return player
 
@@ -190,10 +196,9 @@ def item_interaction(player, item):
 
 
 def enemy_interaction(player, enemy):
-
     while player["HP"] > 0 and enemy["HP"] > 0:
         enemy["HP"] = enemy["HP"] - player["attack"]
         player["HP"] = player["HP"] - enemy["attack"]*((100 - player["armor"])/100)
-
+    print([player, enemy])
     return [player, enemy]
 

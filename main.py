@@ -130,7 +130,7 @@ def level_one_start(player, enemies_list, file_name):
             return player
         #engine.put_gate(board, player)
         ui.display_board(board)
-        ui.display_inventory(player)
+        #ui.display_inventory(player)
 
     return player
 
@@ -199,7 +199,7 @@ def level_two_start(player, enemies_list, file_name):
             print("Game over")
             return player
         ui.display_board(board)
-        ui.display_inventory(player)
+        #ui.display_inventory(player)
 
     return player
 
@@ -267,7 +267,7 @@ def level_three_start(player, enemies_list, file_name):
         if player['HP'] <= 0:
             return player
         ui.display_board(board)
-        ui.display_inventory(player)
+        #ui.display_inventory(player)
 
     return player
 
